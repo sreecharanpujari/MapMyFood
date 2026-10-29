@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './hooks/useAuth';
 import { FavoritesProvider } from './hooks/useFavorites';
 import { Navbar } from './components/Navbar';
@@ -18,7 +18,7 @@ import { NotFoundPage } from './pages/NotFoundPage';
 
 export const App: React.FC = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <AuthProvider>
         <FavoritesProvider>
           <div className="min-h-screen flex flex-col bg-brand-cream text-brand-brown font-sans antialiased">
@@ -41,7 +41,7 @@ export const App: React.FC = () => {
           </div>
         </FavoritesProvider>
       </AuthProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 

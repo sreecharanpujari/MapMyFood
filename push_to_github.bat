@@ -33,3 +33,4 @@ echo If prompted, sign in with your GitHub account in the pop-up.
 echo Once completed, your project will be live on GitHub!
 echo ========================================================
 pause
+
